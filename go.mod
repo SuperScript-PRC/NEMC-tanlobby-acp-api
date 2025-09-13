@@ -31,6 +31,7 @@ require (
 	github.com/pion/mdns/v2 v2.0.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/wlynxg/anet v0.0.5 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
 	golang.org/x/crypto v0.39.0 // indirect
@@ -44,6 +45,7 @@ require (
 	github.com/database64128/chacha8-go v0.0.0-20250815115417-e0f2726d8bd0
 	github.com/go-jose/go-jose/v3 v3.0.4
 	github.com/golang/snappy v1.0.0
+	github.com/gorilla/websocket v1.5.3
 	github.com/klauspost/compress v1.18.0
 	github.com/muhammadmuzzammil1998/jsonc v1.0.0
 	github.com/pion/dtls/v3 v3.0.7
@@ -57,6 +59,7 @@ require (
 	github.com/sclevine/agouti v3.0.0+incompatible
 	github.com/stretchr/testify v1.11.1
 	github.com/ugorji/go/codec v1.3.0
+	github.com/vmihailenco/msgpack/v5 v5.4.1
 	golang.org/x/net v0.41.0
 	golang.org/x/text v0.29.0
 )

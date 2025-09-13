@@ -228,7 +228,7 @@ func (d *Dialer) Dial() (conn net.Conn, err error) {
 		return nil, nil
 	}
 	if !tanLobbyLoginResp.Success {
-		return nil, fmt.Errorf("Dial: %v", tanLobbyLoginResp.ErrorInfo)
+		return nil, fmt.Errorf("Dial: %v (%#v)", tanLobbyLoginResp.ErrorInfo, tanLobbyLoginResp)
 	}
 	d.tanLobbyLoginResp = &tanLobbyLoginResp
 

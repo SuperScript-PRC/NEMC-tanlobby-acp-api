@@ -305,7 +305,7 @@ func defaultIdentityData(data *login.IdentityData) {
 		data.Identity = uuid.NewString()
 	}
 	if data.DisplayName == "" {
-		data.DisplayName = "冰的候选者"
+		data.DisplayName = "普罗米修斯"
 	}
 }
 

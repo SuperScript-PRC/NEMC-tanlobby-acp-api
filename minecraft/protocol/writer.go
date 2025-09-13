@@ -10,6 +10,7 @@ import (
 	"unsafe"
 
 	"github.com/Happy2018new/nemc-tan-lobby-solver/minecraft/nbt"
+	"github.com/pterm/pterm"
 
 	"github.com/go-gl/mathgl/mgl32"
 	"github.com/google/uuid"
@@ -583,7 +584,7 @@ func (w *Writer) UnknownEnumOption(value any, enum string) {
 
 // InvalidValue panics with an invalid value error.
 func (w *Writer) InvalidValue(value any, forField, reason string) {
-	w.panicf("invalid value '%v' for %v: %v", value, forField, reason)
+	pterm.Warning.Printfln("invalid value '%v' for %v: %v", value, forField, reason)
 }
 
 // panicf panics with the format and values passed.

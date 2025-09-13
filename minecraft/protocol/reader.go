@@ -10,6 +10,7 @@ import (
 	"unsafe"
 
 	"github.com/Happy2018new/nemc-tan-lobby-solver/minecraft/nbt"
+	"github.com/pterm/pterm"
 
 	"github.com/go-gl/mathgl/mgl32"
 	"github.com/google/uuid"
@@ -672,7 +673,7 @@ func (r *Reader) UnknownEnumOption(value any, enum string) {
 
 // InvalidValue panics with an error indicating that the value passed is not valid for a specific field.
 func (r *Reader) InvalidValue(value any, forField, reason string) {
-	r.panicf("invalid value '%v' for %v: %v", value, forField, reason)
+	pterm.Warning.Printfln("invalid value '%v' for %v: %v", value, forField, reason)
 }
 
 // errVarIntOverflow is an error set if one of the Varint methods encounters a varint that does not terminate
