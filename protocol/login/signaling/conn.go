@@ -10,11 +10,12 @@ import (
 	"time"
 
 	"github.com/Happy2018new/nemc-tan-lobby-solver/core/nethernet"
+	"github.com/Happy2018new/nemc-tan-lobby-solver/debugger"
 	"github.com/coder/websocket"
 	"github.com/coder/websocket/wsjson"
 )
 
-const EnableDebug = true
+const EnableDebug = debugger.EnableDebugSignaling
 
 type Conn struct {
 	conn *websocket.Conn

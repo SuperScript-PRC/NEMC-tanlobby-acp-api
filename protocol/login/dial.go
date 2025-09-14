@@ -15,12 +15,13 @@ import (
 	"github.com/Happy2018new/nemc-tan-lobby-solver/bunker/auth"
 	"github.com/Happy2018new/nemc-tan-lobby-solver/core/nethernet"
 	"github.com/Happy2018new/nemc-tan-lobby-solver/core/raknet"
+	"github.com/Happy2018new/nemc-tan-lobby-solver/debugger"
 	"github.com/Happy2018new/nemc-tan-lobby-solver/protocol/login/signaling"
 	"github.com/Happy2018new/nemc-tan-lobby-solver/protocol/packet"
 )
 
 const (
-	EnableDebug                     = true
+	EnableDebug                     = debugger.EnableDebugLoginDial
 	DefaultRaknetServerCollectTimes = time.Second * 5
 	DefaultRaknetServerRepeatTimes  = 30
 )
