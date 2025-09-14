@@ -10,12 +10,8 @@ import (
 )
 
 const (
-	LanguageEnglish_US         = "en_US"
-	LanguageEnglish_UK         = "en_UK"
-	LanguageSimplifiedChinese  = "zh_CN"
-	LanguageTraditionalChinese = "zh_HK"
-	LanguageTaiwanChinese      = "zh_TW"
-	LanguageJapanese           = "ja_JP"
+	LanguageEnglish_US        = "en_US"
+	LanguageSimplifiedChinese = "zh_CN"
 
 	DefaultLanguage = LanguageEnglish_US
 )
@@ -173,15 +169,16 @@ const (
 	Warning_Schem_Deprecated
 	Warning_UserHomeDir
 	Auth_MessageFromAuthServer
+	// tan-lobby-solver specific.
+	ACP_ContactingWithAuthServer
+	ACP_LoggingToRoom
+	ACP_ConnectingToGame
+	ACP_ApiReady
 )
 
 var LangDict map[string]map[uint16]string = map[string]map[uint16]string{
-	LanguageEnglish_US:         I18nDict_en_US,
-	LanguageEnglish_UK:         I18nDict_en_UK,
-	LanguageSimplifiedChinese:  I18nDict_zh_CN,
-	LanguageTraditionalChinese: I18nDict_zh_HK,
-	LanguageTaiwanChinese:      I18nDict_zh_TW,
-	LanguageJapanese:           I18nDict_ja_JP,
+	LanguageEnglish_US:        I18nDict_en_US,
+	LanguageSimplifiedChinese: I18nDict_zh_CN,
 }
 
 var I18nDict map[uint16]string

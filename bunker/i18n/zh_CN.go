@@ -147,4 +147,9 @@ var I18nDict_zh_CN map[uint16]string = map[uint16]string{
 	Warning_Schem_Deprecated:    "警告 - `schem' 功能已弃用且已移除，请迁移到BDX格式。",
 	Warning_UserHomeDir:         "警告 - 无法获取当前用户主目录，将设定homedir=\".\";\n",
 	Auth_MessageFromAuthServer:  "来自验证服务器的消息:",
+	// tan-lobby-solver specific.
+	ACP_ContactingWithAuthServer: "正在从验证服务器取得信息",
+	ACP_LoggingToRoom:            "正在登录到房间",
+	ACP_ConnectingToGame:         "正在登录到我的世界游戏网络",
+	ACP_ApiReady:                 "WebSocket API 已就绪",
 }
